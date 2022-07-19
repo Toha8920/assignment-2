@@ -1,5 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
+    background-color: #fff;
 
 }
 
@@ -9,6 +10,7 @@ body {
     color: white;
     padding: 10px;
     justify-content: space-evenly;
+    border-radius: 20px;
 }
 
 .top-text {
@@ -92,6 +94,7 @@ body {
     flex-direction: row;
     column-gap: 10px;
     margin-top: 20px;
+    background-color: #ffff;
 }
 
 .players {
@@ -152,10 +155,20 @@ hr {
 /* For Mobile Screen */
 
 @media only screen and (max-width:688px) {
+    body {
+        overflow: scroll;
+    }
+
     .top-banner {
         display: flex;
         flex-direction: column;
 
+    }
+
+    .overview-matches {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
     }
 
     .middle-area {
@@ -171,60 +184,43 @@ hr {
         grid-gap: 10px;
     }
 
+
+
     footer {
-        text-align: center;
-        background-color: #161616;
-        width: 1250px;
-        height: 250px;
-        color: white;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-down {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 30px;
     }
+
 }
 
 /* For Tablet */
 @media only screen and (min-width:687px) and (max-width:992px) {
-    .top-banner {
-        display: flex;
-
-        flex-direction: row;
+    body {
+        overflow: scroll;
     }
 
-    .middle-area {
+    .top-banner {
         display: flex;
         flex-direction: row;
-        column-gap: 10px;
-        margin-top: 20px;
-        width: 100%;
+
     }
 
     .overview-matches {
-
         display: flex;
         flex-direction: row;
-
-
+        background-color: #fff;
     }
 
     .top-players {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-    }
-
-    .button-area {
-        background-color: #DD0000;
-        color: white;
-        border-radius: 5px;
-        padding: 5px 10px;
-        font-size: 18px;
-    }
-
-    .overview {
-        display: flex;
-        flex-direction: row;
+        margin-top: 50px;
     }
 }

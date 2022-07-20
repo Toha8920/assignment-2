@@ -1,7 +1,18 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #fff;
+    max-width: 1500px;
 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .top-banner {
@@ -89,12 +100,19 @@ body {
     grid-gap: 10px;
 }
 
+.icons-details {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .middle-area {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
     margin-top: 20px;
     background-color: #ffff;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 
 .players {
@@ -125,12 +143,19 @@ footer {
     height: 250px;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+
+    max-width: 1400px;
 }
 
-
+.footer-icon a {
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+}
 
 
 
@@ -151,6 +176,11 @@ footer {
 hr {
     width: 70%;
 }
+
+.top-players .button-area {
+    display: none;
+}
+
 
 /* For Mobile Screen */
 
@@ -202,13 +232,25 @@ hr {
 /* For Tablet */
 @media only screen and (min-width:687px) and (max-width:992px) {
     body {
-        overflow: scroll;
+        margin: 0;
+    }
+
+    .container {
+        margin: 0%;
     }
 
     .top-banner {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px;
+        width: 500px;
+        margin: 0%;
+    }
 
+    .middle-area {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
     }
 
     .overview-matches {
@@ -220,7 +262,47 @@ hr {
     .top-players {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 10px;
-        margin-top: 50px;
+        /* grid-gap: 10px; */
+        width: 500px;
     }
+
+    .player img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .players {
+        height: 350px;
+        width: 150px;
+    }
+
+    .top-players .button-area {
+        display: inline;
+        height: 80px;
+        width: 100px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 300px;
+    }
+
+    .footer-down {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+
+    .footer-icon {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+
+
 }

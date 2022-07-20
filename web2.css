@@ -1,8 +1,17 @@
 body {
     font-family: 'Poppins', sans-serif;
-    max-width: 2000px;
-    margin: 0 auto;
+    background-color: #fff;
 
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .top-banner {
@@ -84,38 +93,47 @@ body {
     text-emphasis-color: white;
 }
 
-.top-players {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-}
-
 .middle-area {
     display: flex;
     flex-direction: row;
     column-gap: 10px;
     margin-top: 20px;
+    background-color: #ffff;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
-.players {
-    width: 200px;
-    height: 300px;
+.middle-banner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
 
+.box-shadow {
+    width: 300px;
+    height: 200px;
+    text-align: center;
     box-shadow: 5px 5px 5px 0px gray;
 
 }
 
-.player {
-    margin-top: 20px;
-}
-
-.fa-comment-dots {
-    margin-left: 10px;
-}
-
-.icon-details {
+.div-country {
     display: flex;
-    justify-content: space-between;
+    margin: 10px;
+}
+
+.german {
+    margin: 10px;
+}
+
+.vs {
+    margin: 10px;
+}
+
+.france {
+    margin: 10px;
 }
 
 footer {
@@ -125,13 +143,19 @@ footer {
     height: 250px;
     color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
+    max-width: 1300px;
 }
 
 
-
+.footer-icon a {
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+}
 
 
 .footer-down {
@@ -149,5 +173,51 @@ footer {
 }
 
 hr {
-    width: 60%;
+    width: 70%;
+}
+
+/* for mobile */
+@media only screen and (max-width:688px) {
+    body {
+        overflow: scroll;
+    }
+
+    .top-banner {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .overview-matches {
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    }
+
+    .middle-area {
+        display: flex;
+        flex-direction: column;
+        column-gap: 10px;
+        margin-top: 20px;
+    }
+
+    .middle-banner {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px;
+    }
+
+
+
+    footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .footer-down {
+        display: flex;
+        flex-direction: column;
+    }
+
 }

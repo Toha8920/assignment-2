@@ -223,6 +223,7 @@ hr {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
+        width: 100%;
     }
 
     .footer-down {
@@ -293,7 +294,7 @@ hr {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 300px;
+        width: 500px;
     }
 
     .footer-down {
@@ -307,7 +308,4 @@ hr {
         flex-direction: row;
         justify-content: center;
     }
-
-
-
 }

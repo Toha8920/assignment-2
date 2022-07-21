@@ -16,7 +16,7 @@ main {
 
 .top-banner {
     display: flex;
-    background-color: black;
+    background-color: blue;
     color: white;
     padding: 10px;
     justify-content: space-evenly;
@@ -42,7 +42,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #161616;
+    background-color: blue;
     width: 312px;
     height: 312px;
     border-radius: 10px;
@@ -138,7 +138,7 @@ main {
 
 footer {
     text-align: center;
-    background-color: #161616;
+    background-color: blue;
     width: 1250px;
     height: 250px;
     color: white;
@@ -237,7 +237,7 @@ hr {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        width: 500px;
+        width: 100%;
         margin: 0%;
     }
 
@@ -251,13 +251,14 @@ hr {
         display: flex;
         flex-direction: row;
         background-color: #fff;
+        width: 100%;
     }
 
     .middle-banner {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         /* grid-gap: 10px; */
-        width: 500px;
+        width: 100%;
     }
 
     footer {
@@ -266,7 +267,7 @@ hr {
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: flex-start;
-        width: 300px;
+        width: 100%;
     }
 
     .footer-down {

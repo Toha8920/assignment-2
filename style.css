@@ -18,7 +18,7 @@ main {
 
 .top-banner {
     display: flex;
-    background-color: black;
+    background-color: blue;
     color: white;
     padding: 10px;
     justify-content: space-evenly;
@@ -44,7 +44,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background-color: #161616;
+    background-color: blue;
     width: 312px;
     height: 312px;
     border-radius: 10px;
@@ -141,7 +141,7 @@ main {
 /* footer-side */
 footer {
     text-align: center;
-    background-color: #161616;
+    background-color: blue;
     width: 1250px;
     height: 250px;
     color: white;
@@ -237,6 +237,7 @@ hr {
 @media only screen and (min-width:687px) and (max-width:992px) {
     body {
         margin: 0;
+
 
     }
 
